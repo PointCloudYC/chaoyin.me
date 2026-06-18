@@ -1,0 +1,187 @@
+/* stylesheet.css — Academic website for Dr. Chao YIN */
+/* Style modeled after jonbarron.github.io */
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  font-size: 14px;
+}
+
+a:link {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:active {
+  color: #f09228;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+/* Name header */
+.name {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Paper title */
+.papertitle {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Section headings */
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 4px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #444444;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+/* Image overlay pattern for paper thumbnails (hover effect) */
+.one {
+  width: 160px;
+  height: 120px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+}
+
+/* News list */
+.news-item {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.news-date {
+  font-weight: bold;
+  color: #555555;
+}
+
+/* Link bar */
+.links {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.links a {
+  margin: 0 4px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #999999;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Award highlight */
+.award-highlight {
+  color: #cc0000;
+  font-weight: bold;
+}
+
+/* Citation style */
+.citation-title {
+  font-weight: bold;
+}
+
+.citation-venue {
+  font-style: italic;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 820px) {
+  body {
+    font-size: 16px;
+  }
+
+  table {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* Profile photo */
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 820px) {
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Publication thumbnail image */
+.paper-thumb {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+/* Venue label styling */
+.venue-label {
+  font-size: 12px;
+  background-color: #f0f0f0;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 4px;
+  color: #666666;
+}
